@@ -3,7 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+:root{
+    --main-color: white;
+    --font-color: rgb(66, 66, 66);
+    --logo-color:rgb(180, 23, 141);
+    --shadow-color:rgba(137, 150, 150, 0.582);
+    --border-hover-color: salmon;
+}
 html{
     font-family: sans-serif;
      font-size: min(max(1rem, 5vw), 20px);
@@ -22,28 +28,63 @@ header{
     display: flex;
     justify-content: space-between;
     align-items:center;
-    /* background-color: salmon; */
     padding: 0.7rem 0.825rem;
     position: relative;
     max-width: 100%;
-    color:black;
+    height: 3rem;
     position: sticky;
     position: -webkit-sticky;
-    box-shadow: 0px 0px 4px 0px rgba(137, 150, 150, 0.582);
+    box-shadow: 0px 0px 4px 0px var(--shadow-color);
    
 }
 
 nav{
-    display: none;
+    /* display: none; */
+    position: relative;
+    height: 3rem;
+   
+  
 }
 
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+    height: calc(100vh - 100%) ;
+    position: absolute;
+    top: 100%;
+    left: -50vw;
+    width: 50vw;
+    box-shadow: 0px 4px 5px 0px var(--shadow-color);
+  
+    
+}
+.nav-links a{
+    display: inline-block;
+    white-space: nowrap;
+    color: var(--font-color);
+    padding: 0.72rem 0;
+    border-bottom: 3px solid transparent;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: 500;
+    /* background-color: red; */
+}
+.nav-links a:hover{
+    
+    border-bottom-color:var(--border-hover-color);
+    
+}
 
-
+.search-bar-container{
+    display: none;
+}
 .burger>div{
     height: 2.5px;
     width: 18px;
     margin: 3.5px 0;
-    background-color: black;
+    background-color: var(--font-color);
 }
 
 .logo{
@@ -53,10 +94,11 @@ nav{
 .logo-text{
     cursor: pointer;
     padding: 8px 5px;
-    color: rgb(180, 23, 141);
+    color: var(--logo-color);
 }
 .user-section{
    flex-basis: 30%;
+   
 }
 .user-section-icons{
     display: flex;
@@ -64,11 +106,21 @@ nav{
     align-items: center;
    
 }
+.user-section-icons li:nth-of-type(1){
+    display: none;
+    
+}
+.material-icons{
+    font-size: 1.05rem;
+    color: var(--font-color);
+}
 
 @media screen and (min-width: 768px) {
     header{
         justify-content: space-around;
         padding: 0;
+        /* height: 2.3rem; */
+        height: fit-content;
     }
     .burger{
         display: none;
@@ -79,35 +131,63 @@ nav{
     }
 
      nav{
-         display: block;
-         width: 50%;
-         height: 100%;
+         width: 40%;
         
-         
+        
      }
      .nav-links{
-         display: flex;
+         flex-direction: row;
          justify-content: space-around;
-        align-items: center; 
-        height: 100%;
-        /* background-color:black; */
+         align-items: center;
+         position: static;
+         height: 100%;
+         box-shadow: none;
+         width: 100%;
+         
+         
      }
      .nav-links a{
-         display: inline-block;
-         white-space: nowrap;
-         color:black;
-         padding: 20px 0;
-         border-bottom: 3px solid transparent;
-         text-transform: uppercase;
          font-size: 0.8rem;
-         font-weight: 500;
+         padding: 1rem;
      }
-     .nav-links a:hover{
-         
-         border-bottom: 3px solid salmon;
-         
-     }
+     
+     .search-bar-container {
+        display: block;
+        width: 25%;
+        max-width: 30%;
+        height: fit-content;
+        position: relative;
+        
+        
+    }
+     .search-bar-container .material-icons {
+        display: inline;
+        position: absolute;
+        top: 50%;
+        padding-left: 0.2rem;
+        transform: translateY(-50%);
+        color: rgb(143, 143, 143);
+        
+    }
+     .search-bar-container input[type="search"]{
+        display: block;
+        width:100% ;
+        padding: 0.5rem 0.1rem 0.5rem 1.8rem ;
+        color:rgb(143, 143, 143) ;
+        background-color: rgba(228, 228, 228, 0.473);
+        outline: none;
+        border: none;
+        border-radius: 5px;
     
+    }
+     .search-bar-container input[type="search"]:focus{
+       
+        background-color: white;
+        outline: none;
+        border: 1px solid var(--font-color) ;
+        border-radius: 5px;
+    
+    }
      .user-section{
          flex-basis: 10%;
      }
@@ -116,4 +196,12 @@ nav{
          cursor: pointer;
          
      }
+     .user-section-icons li:nth-of-type(1){
+        display: inline-block;
+        
+    }
+     .user-section-icons li:nth-of-type(2){
+        display: none;
+        
+    }
 }
