@@ -1,0 +1,60 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: sans-serif;
+     font-size: min(max(1rem, 5vw), 22px);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgb(0, 0,0);
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: salmon;
+    padding: 0.625rem;
+    position: relative;
+    max-width: 100%;
+    color: white;
+    position: sticky;
+    position: -webkit-sticky;
+   
+}
+
+nav{
+    display: none;
+}
+
+
+
+.burger>div{
+    height: 2.5px;
+    width: 18px;
+    margin: 3px 0;
+    background-color: white;
+}
+
+.logo{
+    position: absolute;
+    left: 13%;
+}
+.user-section{
+   flex-basis: 30%;
+}
+.user-section-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
