@@ -6,7 +6,7 @@
 
 html{
     font-family: sans-serif;
-     font-size: min(max(1rem, 5vw), 22px);
+     font-size: min(max(1rem, 5vw), 20px);
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgb(0, 0,0);
 }
@@ -22,13 +22,14 @@ header{
     display: flex;
     justify-content: space-between;
     align-items:center;
-    background-color: salmon;
-    padding: 0.625rem;
+    /* background-color: salmon; */
+    padding: 0.7rem 0.825rem;
     position: relative;
     max-width: 100%;
-    color: white;
+    color:black;
     position: sticky;
     position: -webkit-sticky;
+    box-shadow: 0px 0px 4px 0px rgba(137, 150, 150, 0.582);
    
 }
 
@@ -41,13 +42,18 @@ nav{
 .burger>div{
     height: 2.5px;
     width: 18px;
-    margin: 3px 0;
-    background-color: white;
+    margin: 3.5px 0;
+    background-color: black;
 }
 
 .logo{
     position: absolute;
     left: 13%;
+}
+.logo-text{
+    cursor: pointer;
+    padding: 8px 5px;
+    color: rgb(180, 23, 141);
 }
 .user-section{
    flex-basis: 30%;
@@ -57,4 +63,57 @@ nav{
     justify-content: space-around;
     align-items: center;
    
+}
+
+@media screen and (min-width: 768px) {
+    header{
+        justify-content: space-around;
+        padding: 0;
+    }
+    .burger{
+        display: none;
+    }
+
+    .logo{
+       position: static;
+    }
+
+     nav{
+         display: block;
+         width: 50%;
+         height: 100%;
+        
+         
+     }
+     .nav-links{
+         display: flex;
+         justify-content: space-around;
+        align-items: center; 
+        height: 100%;
+        /* background-color:black; */
+     }
+     .nav-links a{
+         display: inline-block;
+         white-space: nowrap;
+         color:black;
+         padding: 20px 0;
+         border-bottom: 3px solid transparent;
+         text-transform: uppercase;
+         font-size: 0.8rem;
+         font-weight: 500;
+     }
+     .nav-links a:hover{
+         
+         border-bottom: 3px solid salmon;
+         
+     }
+    
+     .user-section{
+         flex-basis: 10%;
+     }
+     .user-section-icons li i{
+         padding: 10px 5px;
+         cursor: pointer;
+         
+     }
 }
