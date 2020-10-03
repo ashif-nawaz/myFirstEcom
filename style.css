@@ -34,6 +34,7 @@ header{
    /* background-color:purple; */
    position: sticky;
    position: -webkit-sticky;
+   top: 0;
    width: 100vw;
 }
 .nav-links{
@@ -50,6 +51,10 @@ header{
    background-color: yellowgreen;
    /* box-shadow: 0px 0px 0px rgb(223, 222, 222),4px 0px 10px rgb(223, 222, 222), 0 0 0 #eee, 0 0 0 #eee; */
    border-right: 1px solid lightgray;
+}
+.nav-links li{
+    width: 100%;
+    text-align: center;
 }
 .nav-links a{
     color: var(--font-color);
