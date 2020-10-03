@@ -23,104 +23,100 @@ ul{
 a{
     text-decoration: none;
 }
-
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    padding: 0.7rem 0.825rem;
-    position: relative;
-    max-width: 100%;
-    height: 3rem;
-    position: sticky;
-    position: -webkit-sticky;
-    box-shadow: 0px 0px 4px 0px var(--shadow-color);
-   
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 3rem;
+   padding: 0 0.625rem;
+   border-bottom: 1px solid lightgray ;
+   /* box-shadow: 4px 0px 10px rgb(223, 222, 222),4px 0px 10px rgb(223, 222, 222); */
+   /* background-color:purple; */
+   position: relative;
+   width: 100vw;
 }
-
-nav{
-    /* display: none; */
-    position: relative;
-    height: 3rem;
-   
-  
-}
-
 .nav-links{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center; 
-    height: calc(100vh - 100%) ;
-    position: absolute;
-    top: 100%;
-    left: -50vw;
-    width: 50vw;
-    box-shadow: 0px 4px 5px 0px var(--shadow-color);
-  
-    
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   height: calc(100vh);
+   position: absolute;
+   top: 0;
+   left: -100%;
+   width: 50vw;
+   z-index: 99;
+   background-color: yellowgreen;
+   /* box-shadow: 0px 0px 0px rgb(223, 222, 222),4px 0px 10px rgb(223, 222, 222), 0 0 0 #eee, 0 0 0 #eee; */
+   border-right: 1px solid lightgray;
 }
 .nav-links a{
-    display: inline-block;
-    white-space: nowrap;
     color: var(--font-color);
-    padding: 0.72rem 0;
-    border-bottom: 3px solid transparent;
-    text-transform: uppercase;
-    font-size: 0.6rem;
-    font-weight: 500;
-    /* background-color: red; */
+    white-space: nowrap;
 }
-.nav-links a:hover{
-    
-    border-bottom-color:var(--border-hover-color);
-    
-}
-
 .search-bar-container{
     display: none;
-}
-.burger>div{
-    height: 2.5px;
-    width: 18px;
-    margin: 3.5px 0;
-    background-color: var(--font-color);
-}
-
-.logo{
-    position: absolute;
-    left: 13%;
-}
-.logo-text{
-    cursor: pointer;
-    padding: 8px 5px;
-    color: var(--logo-color);
-}
-.user-section{
-   flex-basis: 30%;
-   
 }
 .user-section-icons{
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
+    width: 26%;
+    height: 100%;
+    background-color: #fff;
+}
+.user-section-icons li i{
+    cursor: pointer;
+    /* background-color: red; */
+    padding: 0.4rem 0.2rem;
+    
 }
 .user-section-icons li:nth-of-type(1){
     display: none;
-    
 }
-.material-icons{
-    font-size: 1.05rem;
-    color: var(--font-color);
+.burger{
+    cursor: pointer;
+}
+.burger>div{
+    width: 22px;
+    height: 3.5px;
+    margin: 4.5px;
+    background-color: var(--font-color);
+}
+.logo{
+    position:absolute;
+    left: 15%;
+    cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
+.logo-text{
+    background-color: #fff;
+    padding: 0.4rem 0.2rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: salmon;
+}
+
+/* media queries for small mobile device */
+
+@media screen and (min-width: 576px){
+
+}
+
+/* media queries for ipad level tablet */
+
+@media screen and (min-width: 768px){
+    
+}
+
+/* media queries for big device from ipad pro, laptop and descktop */
+
+@media screen and (min-width: 992px) {
     header{
         justify-content: space-around;
         padding: 0;
-        /* height: 2.3rem; */
-        height: fit-content;
+        height: 2.5rem;
+       
     }
     .burger{
         display: none;
@@ -130,11 +126,6 @@ nav{
        position: static;
     }
 
-     nav{
-         width: 40%;
-        
-        
-     }
      .nav-links{
          flex-direction: row;
          justify-content: space-around;
@@ -142,13 +133,24 @@ nav{
          position: static;
          height: 100%;
          box-shadow: none;
-         width: 100%;
-         
+         width: 40%;
+         overflow: hidden;
+         background-color: white;
+         border: none;
          
      }
      .nav-links a{
          font-size: 0.8rem;
-         padding: 1rem;
+         padding: 0.55rem 0.4rem;
+         border-bottom: 4px solid transparent;
+         transition: all 0.3s ease-in;
+         text-transform: uppercase;
+         font-weight: 500;
+        
+     }
+     .nav-links a:hover{
+         border-bottom-color:salmon;
+        
      }
      
      .search-bar-container {
@@ -159,6 +161,7 @@ nav{
         position: relative;
         
         
+        
     }
      .search-bar-container .material-icons {
         display: inline;
@@ -167,7 +170,15 @@ nav{
         padding-left: 0.2rem;
         transform: translateY(-50%);
         color: rgb(143, 143, 143);
+       
         
+    }
+    .user-section-icons li i{
+        transition: all 0.2s ease;
+    }
+     .user-section-icons li i:hover{
+        color: rgba(136, 136, 136, 0.973);
+        color: salmon;
     }
      .search-bar-container input[type="search"]{
         display: block;
@@ -188,8 +199,10 @@ nav{
         border-radius: 5px;
     
     }
-     .user-section{
-         flex-basis: 10%;
+    
+     .user-section-icons{
+         width: 14%;
+         max-width: 20% ;
      }
      .user-section-icons li i{
          padding: 10px 5px;
@@ -205,3 +218,4 @@ nav{
         
     }
 }
+
