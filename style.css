@@ -136,6 +136,7 @@ header{
     justify-content: space-around;
     align-items: flex-start;
     height: 4.5rem;
+    border: none;
     padding: 0.4rem 0.2rem 0.2rem 0.2rem;
     margin: 0 0 0.7rem 0;
 }
