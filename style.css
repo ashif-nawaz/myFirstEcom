@@ -245,8 +245,11 @@ header{
     position: relative;
 }
 .deals{
-    width: 40%;
-    height: 240px;
+    /* width: 40%; */
+    width: 180px;
+    max-width: 240px;
+    height: 230px;
+    max-height: 260px;
     margin: 0.4rem;
     background-color: white;
     border: 1px solid rgb(212, 211, 211);
