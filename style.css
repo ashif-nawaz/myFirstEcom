@@ -230,6 +230,7 @@ header{
     text-transform: uppercase;
     margin: 0.9rem;
     font-size: 1rem;
+    font-weight: 600;
     color: var(--font-color);
 }
 
@@ -271,6 +272,7 @@ header{
    width: fit-content;
    margin: auto;
    font-size: 1rem;
+   font-weight: 400;
    color: var(--font-color);
 }
 .deals-overlay span{
