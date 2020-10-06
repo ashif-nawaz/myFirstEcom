@@ -179,7 +179,7 @@ header{
 /* welcome banner styling here */
 .shopping-banner-container{
     width: 100%;
-    margin: 0.5rem 0;
+    margin: 0.7rem 0;
     height: fit-content;
     position: relative;
     border: none;
@@ -191,7 +191,8 @@ header{
 }
 .shopping-banner-container .banner-overlay{
     width: 100%;
-   background: linear-gradient(360deg, gray, transparent);
+    height: 50%;
+   background: linear-gradient(360deg, rgb(219, 219, 219), transparent);
     position: absolute;
     bottom: 0;
     padding: 0.3rem;
@@ -205,6 +206,7 @@ header{
 }
 .banner-overlay h3{
     font-size: .9rem;
+    background-color: rgba(255, 255, 255, 0.932);
 }
 .banner-overlay button{
    width: 20%;
@@ -214,6 +216,7 @@ header{
    border-radius: 20px;
    background-color: orangered;
    color: white;
+   cursor: pointer;
 }
 
 
