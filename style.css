@@ -195,12 +195,12 @@ header{
    background: linear-gradient(360deg, rgb(219, 219, 219), transparent);
     position: absolute;
     bottom: 0;
-    padding: 0.3rem;
+    padding: 0.5rem;
 }
 .banner-overlay h1,h3,button{
     display: block;
     width: fit-content;
-    margin: 0.3rem auto;
+    margin: 0.2rem auto;
     font-weight: 400;
     color: orangered;
 }
