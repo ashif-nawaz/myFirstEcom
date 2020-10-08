@@ -290,7 +290,7 @@ header{
 
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(3,minmax(130px,150px));
+    grid-template-columns: repeat(3, 1fr);
     padding: 0.5rem;
     grid-gap: 0.3rem;
 }
