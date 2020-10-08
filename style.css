@@ -125,7 +125,7 @@ header{
 .container-100{
     width: 100%;
     background-color: var(--container-bg-color);
-    border: 1px solid rgba(211, 211, 211, 0.39);
+    border: 1px solid rgba(211, 211, 211, 0.20);
 }
 .container-95{
     width: 90%;
@@ -254,7 +254,7 @@ header{
     max-height: 260px;
     margin: 0.4rem;
     background-color: white;
-    border: 1px solid rgb(212, 211, 211);
+    border: 1px solid rgba(212, 211, 211, 0.185);
     position: relative;
 }
 .deals img{
