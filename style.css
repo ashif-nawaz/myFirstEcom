@@ -229,12 +229,13 @@ header{
 .heading{
     text-transform: uppercase;
     margin: 0.9rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--font-color);
 }
 
 /* deals banner styling */
+
 .deals-of-the-day-container{
     display: flex;
     justify-content: space-around;
@@ -249,7 +250,7 @@ header{
     /* width: 40%; */
     width: 160px;
     max-width: 240px;
-    height: 230px;
+    height: 220px;
     max-height: 260px;
     margin: 0.4rem;
     background-color: white;
@@ -270,19 +271,57 @@ header{
 }
 .deals-overlay h3{
    width: fit-content;
-   margin: auto;
-   font-size: 1rem;
+   margin:0.15rem auto;
+   font-size: 0.9rem;
    font-weight: 400;
    color: var(--font-color);
 }
 .deals-overlay span{
-    display: block;
+   display: block;
    width: fit-content;
    margin: auto;
    color: white;
    font-size: 1rem;
    padding: 0 0.2rem;
    background-color:orangered;
+}
+
+/* categories to bag grid styling */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(28%,32%));
+    padding: 0.5rem;
+    grid-gap: 0.3rem;
+}
+.grid-item{
+    position: relative;
+    width: 100%;
+    height: 160px;
+    /* background-color: rgba(255, 255, 255, 0.164); */
+}
+.category-image{
+    width: 100%;
+    height: 70%;
+}
+
+.category-image img{
+   width: 100%;
+   height: 100%;
+     border-radius: 50%;
+   object-fit: fill;
+}
+.grid-item-overlay{
+  position: absolute;
+  bottom: 0;
+  height: 30%;
+  width: 100%;
+  padding-top: 0.3rem;
+  text-align: center;
+}
+.grid-item-overlay span{
+  color: var(--font-color);
+  font-size: 0.7rem;
 }
 
 
