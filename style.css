@@ -352,6 +352,7 @@ header{
     transform: translate(-50%,0);
     background-color: rgba(255, 255, 255, 0.774);
     padding: 0.4rem;
+    font-size: 1rem;
     text-align: center;
     font-weight: 200;
     color: var(--font-color);
@@ -376,6 +377,7 @@ header{
 .trends-overlay h3{
     white-space: nowrap;
     width: fit-content;
+    font-size: 0.8rem;
     text-transform: uppercase;
     position: absolute;
     padding: 0.3rem;
