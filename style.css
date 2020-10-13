@@ -392,7 +392,24 @@ header{
     
 }
 
+/* offer corner styling from here */
 
+.offer-corner-grid-item{
+     background: linear-gradient(to right, rgb(225, 0, 255), rgb(255, 0, 149));
+     border-radius: 50%;
+     position: relative;
+}
+.offer-text{
+  padding-top: 0.25rem;
+    height: 80%;
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: rgb(251, 255, 0);
+    transform: translate(-50%,-50%);
+}
 /* media queries for small mobile device */
 
 @media screen and (min-width: 576px){
