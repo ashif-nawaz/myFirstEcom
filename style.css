@@ -224,7 +224,27 @@ header{
    color: white;
    cursor: pointer;
 }
-
+/* sale promotional banner */
+.sale-promotion-01{
+    padding: 0.5rem;
+    margin: auto;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, rgb(255, 0, 106), rgb(245, 17, 245));
+}
+.mega-animation{
+    color: rgba(253, 237, 9, 0.973);
+    animation: mega-animate 0.5s ease-in-out infinite alternate-reverse;
+}
+@keyframes mega-animate{
+    0%{
+        color: rgba(255, 238, 0, 0.973);
+    }50%{
+        color: rgb(247, 229, 195);
+    }100%{
+        color: rgb(240, 216, 0);
+    }
+}
 /* heading */
 .heading{
     text-transform: uppercase;
