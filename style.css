@@ -226,6 +226,7 @@ header{
 }
 /* sale promotional banner */
 .sale-promotion-01{
+    font-weight: 400;
     padding: 0.5rem;
     margin: auto;
     text-align: center;
