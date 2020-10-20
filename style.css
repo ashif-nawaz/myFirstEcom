@@ -126,17 +126,17 @@ header{
 .container-100{
     width: 100%;
     background-color: var(--container-bg-color);
-    border: 1px solid rgba(211, 211, 211, 0.123);
+    border: 1px solid rgba(226, 226, 226, 0.123);
 }
 .container-95{
     width: 95%;
     background-color: var(--container-bg-color);
-    border: 1px solid rgba(211, 211, 211, 0.548);
+    border: 1px solid rgba(230, 230, 230, 0.123);
 }
 .container-90{
     width: 90%;
     background-color: var(--container-bg-color);
-    border: 1px solid rgba(211, 211, 211, 0.747);
+    border: 1px solid rgba(230, 230, 230, 0.123);
 }
 .icon-menu-container{
     display: flex;
@@ -435,6 +435,51 @@ header{
    width: 100%;
    border: 2px solid rgb(248, 155, 155);
    border-radius: 4px;
+}
+
+/* Special Arrival styling */
+
+.special-arrival-container{
+    height: 280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.special-arrival-container>div{
+    width: 47%;
+    height: 90%;
+    border: 2px solid rgb(248, 155, 155);
+    border-radius: 4px;
+}
+.special-arrival-item img{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid rgb(248, 155, 155); */
+    
+}
+.special-arrival-item{
+    position: relative;
+}
+.special-arrival-item .arrival-overlay{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    background: linear-gradient(to top, rgba(109, 109, 109, 0.685), transparent);
+    color: rgba(255, 255, 255, 0.883);
+    text-align:center;
+}
+.special-arrival-item .arrival-overlay h3,h4{
+    font-weight: 100;
+}
+.special-arrival-item .arrival-overlay button{
+    margin-top: 0.2rem;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.883);
+    padding: 0.2rem 0.4rem;
+    background-color: rgb(245, 67, 126);
 }
 
 
