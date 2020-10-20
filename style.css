@@ -438,7 +438,7 @@ header{
 }
 .offer-item img{
    width: 100%;
-   border: 1.5px solid rgb(248, 155, 155);
+   border: 0.3px solid rgba(245, 67, 126, 0.603);
    border-radius: 4px;
 }
 
