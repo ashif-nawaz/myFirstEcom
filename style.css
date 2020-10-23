@@ -670,6 +670,10 @@ header{
     border: none;
     background-color:rgb(245, 67, 126);
     color: rgba(255, 255, 255, 0.931);
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
  
 }
 
