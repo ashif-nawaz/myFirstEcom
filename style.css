@@ -583,6 +583,26 @@ header{
 
 }
 
+/* Social links styling */
+.social-links{
+    margin: 0.7rem auto;
+    padding: 0.4rem;
+}
+.social-links>h4{
+   text-align: center;
+}
+.social-links>h4>i{
+    color:rgb(245, 67, 126) ;
+}
+
+.social{
+    width: fit-content;
+    margin: 0.4rem auto;
+}
+.social i{
+    margin-left: 0.3rem;
+}
+
 /* media queries for small mobile device */
 
 @media screen and (min-width: 576px){
