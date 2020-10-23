@@ -502,6 +502,48 @@ header{
     background-color: rgb(245, 67, 126);
 }
 
+/* App download banner */
+.app-promo{
+    padding: 0.4rem;
+    margin:0.7rem auto;
+    background-color: rgba(207, 252, 59, 0.897);
+}
+.app-promo>h4{
+    white-space: nowrap;
+    width: 85%;
+    text-align: center;
+    margin:0.3rem auto;
+    color:  var(--font-color);
+}
+.app-container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.app-container>div{
+    width: 40%;
+    color: rgba(255, 255, 255, 0.883);
+    font-size: 0.7rem;
+    background-color: rgb(245, 67, 126);
+    border: 1px solid white;
+
+}
+.col{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.2rem;
+    border-radius: 4px;
+}
+.appstore-logo{
+    width: 23%;
+}
+.get-app{
+    width: 70%;
+}
 
 /* media queries for small mobile device */
 
