@@ -545,6 +545,44 @@ header{
     width: 70%;
 }
 
+/* Brand feature styling from here */
+
+.brand-feature{
+    margin: auto;
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.brand-feature>div{
+   
+    width: 32%;
+    padding: 0.2rem;
+
+}
+.brand-feature>div .one{
+    text-align: center;
+    padding:0.8rem;
+    border-radius: 50%;
+    width: 75px;
+    margin: auto;
+    background-color: rgb(245, 67, 126);
+    color: rgba(255, 255, 255, 0.931);
+
+}
+.brand-feature>div .two{
+    margin-top: 0.2rem;
+   text-align: center;
+   font-size: 0.7rem;
+   color:var(--font-color);
+
+}
+.brand-feature>div .two span{
+   white-space: nowrap;
+
+}
+
 /* media queries for small mobile device */
 
 @media screen and (min-width: 576px){
