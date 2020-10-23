@@ -635,6 +635,7 @@ header{
 }
 .email-heading span{
    margin-left: 0.3rem;
+   color: var(--font-color);
 }
 .email-input{
     display: flex;
