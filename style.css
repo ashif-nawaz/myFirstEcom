@@ -141,14 +141,18 @@ header{
     border: 1px solid rgba(230, 230, 230, 0.123);
 }
 .icon-menu-container{
-    display: flex;
+    /* display: flex;
     justify-content: space-around;
+    align-items: center; */
+    white-space: nowrap;
+    padding-top: 4px;
+    padding-left: 4px;
     overflow: auto;
-    align-items: center;
     height: 4.8rem;
     border: none;
-    width: 100%;
     margin: 0 0 0.7rem 0;
+    background-color: var(--container-bg-color);
+    border: 1px solid rgba(226, 226, 226, 0.123);
     
 }
 .icon-menu-container::-webkit-scrollbar{
@@ -157,6 +161,7 @@ header{
 }
 
 .menu-category-icon{
+    display: inline-block;
       width: 3.5rem;
       height: 4.3rem;
       position: relative;
