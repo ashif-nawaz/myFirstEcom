@@ -143,6 +143,7 @@ header{
 .icon-menu-container{
     display: flex;
     justify-content: space-around;
+    overflow: scroll;
     align-items: center;
     height: 4.8rem;
     border: none;
@@ -150,6 +151,11 @@ header{
     margin: 0 0 0.7rem 0;
     
 }
+.icon-menu-container::-webkit-scrollbar{
+    display: none;
+    
+}
+
 .menu-category-icon{
       width: 3.5rem;
       height: 4.3rem;
