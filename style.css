@@ -543,9 +543,10 @@ header{
 }
 .app-container>div{
     width: 40%;
-    color: rgba(255, 255, 255, 0.883);
+    color: rgba(255, 255, 255, 0.938);
     font-size: 0.7rem;
     background-color: rgb(245, 67, 126);
+    background-color: #030407;
     border: 1px solid white;
 
 }
