@@ -161,7 +161,8 @@ header{
 }
 .icon-menu-container::-webkit-scrollbar{
     display: none !important;
-    width: none;
+    width: 0;
+    background: transparent;
     
 }
 
