@@ -147,7 +147,7 @@ header{
     white-space: nowrap;
     padding-top: 4px;
     padding-left: 4px;
-    overflow: auto;
+    overflow-x: auto;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     height: 4.8rem;
@@ -158,6 +158,10 @@ header{
     
 }
 .icon-menu-container::-webkit-scrollbar{
+    display: none;
+    
+}
+.icon-menu-container::-webkit-scrollbar-track{
     display: none;
     
 }
