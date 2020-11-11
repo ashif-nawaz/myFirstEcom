@@ -154,7 +154,7 @@ header{
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
+    /* -webkit-overflow-scrolling: touch; */
     height: 4.8rem;
     border: none;
     margin: 0 0 0.7rem 0;
