@@ -155,11 +155,6 @@ header{
     overflow-y: hidden;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    box-shadow: none;
-    -webkit-box-shadow: none !important;
-    background-color: transparent;
-    scrollbar-width: none;
-
     height: 4.8rem;
     border: none;
     margin: 0 0 0.7rem 0;
@@ -167,18 +162,7 @@ header{
     border: 1px solid rgba(226, 226, 226, 0.123);
     
 }
-.icon-menu-container::-webkit-scrollbar{
-    display: none !important;
-    width: 0;
-    background: transparent;
-    
-}
-.icon-menu-container::-webkit-scrollbar-thumb{
-    display: none !important;
-    width: 0;
-    background-color: transparent;
-    
-}
+
 
 
 .menu-category-icon{
