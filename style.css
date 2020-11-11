@@ -21,7 +21,9 @@ html{
 
 }
 
-
+div::-webkit-scrollbar{
+       display: none;
+}
 
 ul{
     list-style: none;
