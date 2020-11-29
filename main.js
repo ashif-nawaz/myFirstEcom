@@ -22,6 +22,6 @@ function mobileModalClose(){
           }
           e.stopPropagation();
         
-    }, true)
+    }, true);
 }
 

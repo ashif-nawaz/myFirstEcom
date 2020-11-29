@@ -775,6 +775,27 @@ header{
         width: 70%;
     }
 }
+
+@-webkit-keyframes animate{
+    from{
+        width:  0%;
+    }to{
+        width: 70%;
+    }
+}
+
+.mobileMenuList{
+    padding: 0.8rem;
+    /* background-color: pink; */
+}
+
+.mobileMenuList li{
+    position: relative;
+    padding: 0.4rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    /* background-color: green; */
+}
 /* media queries for small mobile device */
 
 @media screen and (min-width: 576px){
