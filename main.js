@@ -1,14 +1,27 @@
-var burgerButton=document.getElementById("burgerMenuIcon");
-var mobileMenu=document.getElementById("mobileMenuBar");
-var closeButton=document.getElementById("closeSideMenu");
+let modal = document.querySelector(".navMobileModal");
+let modalContent = document.querySelector(".navMobileModal .menuContent");
 
-burgerButton.onclick=function() {
+mobileModalClose();
+mobileModalOpen();
 
-    mobileMenu.style.width="60vw";
-   
+function mobileModalOpen(){
+    let burgerButton = document.querySelector(".burger");
+    burgerButton.addEventListener("click", function(e){
+        modal.style.display = "block";
+        modalContent.classList.add("slideRight");
+    });
 }
-closeButton.onclick=function() {
-    mobileMenu.style.width="0vw";
-}
 
+
+function mobileModalClose(){
+    
+    modal.addEventListener("click", function(e){
+          if(e.target === e.currentTarget){
+               modal.style.display = "none";
+               modalContent.classList.remove("slideRight");
+          }
+          e.stopPropagation();
+        
+    }, true)
+}
 
