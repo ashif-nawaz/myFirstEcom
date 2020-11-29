@@ -792,7 +792,7 @@ header{
 .mobileMenuList li{
     position: relative;
     padding: 0.4rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 0.3rem;
     /* background-color: green; */
 }
