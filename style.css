@@ -453,20 +453,16 @@ header{
     padding: 0.5rem 0.2rem;
     height: 150px;
     margin: auto;
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: nowrap; */
     white-space: nowrap;
+    /* -webkit-overflow-scrolling: touch; */
     overflow-x: auto;
     overflow-y: hidden;
 }
 
 .offer-corner-container::-webkit-scrollbar{
-       
-    display: none;
-
+    width: 0px;
 }
+
 .offer-corner-container>div{
    
     width: 30%;
