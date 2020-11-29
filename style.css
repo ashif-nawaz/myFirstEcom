@@ -461,6 +461,15 @@ header{
 
 .offer-corner-container::-webkit-scrollbar{
     width: 0px;
+    background-color: transparent;
+}
+
+.offer-corner-container::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+.offer-corner-container::-webkit-scrollbar-thumb{
+    background-color: transparent;
 }
 
 .offer-corner-container>div{
