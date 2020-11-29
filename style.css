@@ -454,22 +454,13 @@ header{
     height: 150px;
     margin: auto;
     white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
+    /* -webkit-overflow-scrolling: touch; */
     overflow-x: auto;
     overflow-y: hidden;
 }
 
 .offer-corner-container::-webkit-scrollbar{
-    width: 0px;
-    background-color: transparent;
-}
-
-.offer-corner-container::-webkit-scrollbar-track{
-    background-color: transparent;
-}
-
-.offer-corner-container::-webkit-scrollbar-thumb{
-    background-color: transparent;
+    display: none;
 }
 
 .offer-corner-container>div{
