@@ -796,6 +796,7 @@ header{
 
 
 .accountInfo > div p{
+    white-space: nowrap;
    /* background-color: #fff; */
    color: rgb(66, 65, 65);
    font-size: 0.9rem;
