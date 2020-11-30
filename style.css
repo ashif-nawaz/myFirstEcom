@@ -797,16 +797,19 @@ header{
 
 .mobileMenuList li{
     position: relative;
-    padding: 0.3rem;
+    padding: 0.2rem;
     font-weight: 400;
     margin-bottom: 0.1rem;
     white-space: nowrap;
+    /* background-color: yellow; */
 }
 
 .clickOpenCaret{
     position: relative;
+    padding: 0.4rem;
     width: 100%;
     display: block;
+    /* background-color: #fff; */
     -webkit-tap-highlight-color: hotpink;
 }
 
@@ -829,6 +832,7 @@ header{
 }
 
 .closeCaret{
+    margin-left: 0.3rem;
    display: none;
    color: gray;
    font-weight: 300;
