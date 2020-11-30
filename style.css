@@ -786,6 +786,7 @@ header{
 }
 
 .accountInfo .col-right{
+    position: relative;
     padding: 0.8rem 0.4rem;
     width: 55%;
     background: linear-gradient(to right, white, rgb(252, 186, 252));
@@ -860,18 +861,30 @@ header{
 .welcomeModalClose{
     position: absolute;
     right: 0;
-    background-color: red;
-    padding: 0.05rem 0.44rem;
-    font-size: 1.8rem;
-    font-weight: 500;
+    padding: 0rem 0.44rem;
+    font-size: 2rem;
+    font-weight: 200;
+    color: gray;
+    z-index: 10;
 }
 
 .welcomeModalBanner{
-    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex: 1;
+    height: 35%;
     width: 100%;
-    background-color: red;
+    /* background: linear-gradient(to right, pink, rgb(250, 123, 250)); */
 }
-
+.welcomeModalBanner .col-right>div{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+     /* background-color: green; */
+}
 .welcomeModalInputs{
     display: flex;
     flex-direction: column;
@@ -879,7 +892,7 @@ header{
     align-items: stretch;
     width: 100%;
     padding: 0.8rem;
-    height: 70%;
+    height: 65%;
     /* background-color: green; */
 }
 
@@ -896,7 +909,7 @@ header{
 
 .welcomeModalInputs input[type="button"]{
     -webkit-appearance: none;
-   background-color: rgb(255, 0, 149);
+   background-color: rgb(252, 26, 120);
    color: whitesmoke;
    border-color: transparent;
    outline: none;
