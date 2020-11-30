@@ -843,6 +843,65 @@ header{
     animation: animate 0.4s ease;
 }
 
+
+
+/* Timeout Welcome modal with Login credentials */
+ 
+.welcomeModalContent{
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 400px;
+}
+
+.welcomeModalClose{
+    position: absolute;
+    right: 0;
+    background-color: red;
+    padding: 0.05rem 0.44rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.welcomeModalBanner{
+    height: 30%;
+    width: 100%;
+    background-color: red;
+}
+
+.welcomeModalInputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+    padding: 0.8rem;
+    height: 70%;
+    /* background-color: green; */
+}
+
+
+.welcomeModalInputs input{
+   width: 100%;
+   display: block;
+   padding: 0.4rem 0.2rem;
+   font-size: 0.9rem;
+   border: 1px solid gray;
+   border-radius: 5px;
+  
+}
+
+.welcomeModalInputs input[type="button"]{
+   background-color: rgb(255, 0, 149);
+   color: whitesmoke;
+   border-color: transparent;
+   outline: none;
+
+}
+
 @keyframes animate{
     from{
         width:  0%;
