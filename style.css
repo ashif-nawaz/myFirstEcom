@@ -820,8 +820,8 @@ header{
    content: "";
    width: 8px;
    height: 8px;
-   border: 1.5px solid black;
-   border-color: black black transparent transparent;
+   border: 1.5px solid gray;
+   border-color: gray gray transparent transparent;
    transform: translateY(-50%) rotate(45deg);
    /* background-color: red; */
 }
