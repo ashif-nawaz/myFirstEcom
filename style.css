@@ -806,7 +806,7 @@ header{
 
 .clickOpenCaret{
     position: relative;
-    padding: 0.4rem;
+    padding: 0.4rem 0;
     width: 100%;
     display: block;
     /* background-color: #fff; */
@@ -835,6 +835,7 @@ header{
     margin-left: 0.3rem;
    display: none;
    color: gray;
+   font-size: 0.7rem;
    font-weight: 300;
 }
 
