@@ -3,10 +3,26 @@ let modal = document.querySelector(".navMobileModal");
 let timeOutWelcomeModal = document.querySelector(".welcomeModal");
 let modalContent = document.querySelector(".navMobileModal .menuContent");
 
+
+
 mobileModalClose();
 mobileModalOpen();
 clickOpenCaret();
-openTimeoutWelcomeBanner();
+
+let triggerModal = (function(){
+    let showWelcomeModal = true;
+    return function(){
+        if(showWelcomeModal){
+            openTimeoutWelcomeBanner();
+        }
+        showWelcomeModal = false;
+    }
+      
+})();
+
+triggerModal();
+
+
 closeTimeoutWelcomeBanner();
 
 
@@ -27,7 +43,7 @@ function closeTimeoutWelcomeBanner(){
 function openTimeoutWelcomeBanner(){
      setTimeout(() => {
             timeOutWelcomeModal.classList.add("active");
-     }, 5000);
+     }, 10000);
 }
 
 function clickOpenCaret(){
