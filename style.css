@@ -917,6 +917,7 @@ header{
     /* background-color: green; */
 }
 
+
 .welcomeModalInputs h4{
     text-transform: uppercase;
     font-weight: 500;
@@ -933,6 +934,13 @@ header{
   
 }
 
+.warningMessage{
+    display: none;
+    color: red;
+    font-size: 0.6rem;
+    margin: 0.15rem 0.5rem;
+    width: fit-content;
+}
 .welcomeModalInputs input[type="button"]{
     -webkit-appearance: none;
    background-color: rgb(252, 26, 120);
