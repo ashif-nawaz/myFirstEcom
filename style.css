@@ -861,10 +861,11 @@ header{
 .welcomeModalClose{
     position: absolute;
     right: 0;
-    padding: 0rem 0.44rem;
+    top: -5px;
+    padding: 0 0.3rem ;
     font-size: 2rem;
-    font-weight: 200;
-    color: gray;
+    font-weight: 100;
+    color: rgb(73, 73, 73);
     z-index: 10;
 }
 
@@ -900,7 +901,7 @@ header{
 .welcomeModalInputs input{
    width: 100%;
    display: block;
-   padding: 0.4rem 0.2rem;
+   padding: 0.5rem 0.2rem;
    font-size: 0.9rem;
    border: 1px solid gray;
    border-radius: 5px;
