@@ -780,13 +780,14 @@ header{
    font-size: 0.65rem;
 }
 
-.accountInfo > div h4{
+.accountInfo > div p{
    /* background-color: #fff; */
    color: rgb(66, 65, 65);
    font-size: 0.9rem;
 }
 
 .accountInfo .col-right .mobileButtons{
+    -webkit-appearance: none;
    background-color: #fff;
    
 }
