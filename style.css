@@ -795,6 +795,19 @@ header{
     /* background-color: pink; */
 }
 
+.mobileContactUs{
+    padding: 0.4rem 0;
+    border-top: 1px solid lightgray;
+}
+.mobileContactUs li{
+    padding: 0.3rem;
+    color: gray;
+    font-weight: 200;
+    font-size: 0.82rem;
+    margin-bottom: 0.3rem;
+    /* background-color: green; */
+}
+
 .mobileMenuList li{
     position: relative;
     padding: 0.3rem;
