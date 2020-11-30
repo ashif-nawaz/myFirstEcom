@@ -811,6 +811,7 @@ header{
 .accountInfo .col-right .mobileButtons{
     -webkit-appearance: none;
     margin-top: 0.6rem;
+    white-space: nowrap;
    /* background-color: #fff; */
    padding: 0.3rem 0rem;
    
