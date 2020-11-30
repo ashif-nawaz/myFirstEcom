@@ -917,7 +917,7 @@ header{
     /* background-color: green; */
 }
 
-.welcomeModalInputs h3{
+.welcomeModalInputs h4{
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -1039,7 +1039,7 @@ header{
 }
 
 .loginPageInputs{
-    height: 40%;
+    height: 45%;
 }
 
 
