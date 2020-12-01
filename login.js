@@ -6,8 +6,9 @@ function continueButtonClicked(){
     let continueButton = document.querySelector("#continueLogin");
     continueButton.addEventListener("click", function(e){
          e.preventDefault();
+         this.style.backgroundColor = "green";
          mobileNumberValidation();
-         alert("hi");
+         this.style.color = "yellow";
     });
 }
 
