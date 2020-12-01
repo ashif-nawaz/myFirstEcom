@@ -2,8 +2,8 @@
 let modal = document.querySelector(".navMobileModal");
 let timeOutWelcomeModal = document.querySelector(".welcomeModal");
 let modalContent = document.querySelector(".navMobileModal .menuContent");
-let timeOutnumberInput = document.getElementById("mobileNumber");
-let timeOutwarningTxt = document.querySelector(".warningMessage");
+// let timeOutnumberInput = document.getElementById("mobileNumber");
+// let timeOutwarningTxt = document.querySelector(".warningMessage");
 
 mobileModalClose();
 mobileModalOpen();
@@ -14,7 +14,8 @@ closeTimeoutWelcomeBanner();
 continueButtonClicked();
 
 function continueButtonClicked(){
-  
+    var timeOutnumberInput = document.getElementById("mobileNumber");
+    var timeOutwarningTxt = document.querySelector(".warningMessage");
     // let continueButton = document.querySelector(".welcomeModalInputs input[type=\"button\"");
     let continueButton = document.querySelector("#continueLogin");
     continueButton.addEventListener("click", function(e){
