@@ -5,6 +5,9 @@ let modalContent = document.querySelector(".navMobileModal .menuContent");
 // let timeOutnumberInput = document.getElementById("mobileNumber");
 // let timeOutwarningTxt = document.querySelector(".warningMessage");
 
+var timeOutnumberInput;
+var timeOutwarningTxt;
+
 mobileModalClose();
 mobileModalOpen();
 clickOpenCaret();
