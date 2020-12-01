@@ -7,6 +7,7 @@ function continueButtonClicked(){
     continueButton.addEventListener("click", function(e){
          e.preventDefault();
          mobileNumberValidation();
+         alert("hi");
     });
 }
 
