@@ -1,5 +1,6 @@
 "use strict";
 let numberInput = document.getElementById("mobileNumber");
+let warningTxt = document.querySelector(".warningMessage");
 continueButtonClicked();
 
 function continueButtonClicked(){
@@ -8,11 +9,12 @@ function continueButtonClicked(){
     continueButton.addEventListener("click", function(e){
          e.preventDefault();
          let numberInput = document.getElementById("mobileNumber");
-             alert(numberInput);
+             alert(warningTxt);
+             warningTxt.classList.add("active");
     });
 }
 
-function mobileNumberValidation(){
+// function mobileNumberValidation(){
     //    let numberInput = document.getElementById("mobileNumber");
         //     numberInput.style.background = "red";
         // // let warningTxt = document.querySelector(".warningMessage");
@@ -29,4 +31,4 @@ function mobileNumberValidation(){
         //     warningTxt.classList.remove("active");
         // } 
 
-}
+// }
