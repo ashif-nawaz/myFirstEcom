@@ -1,4 +1,5 @@
 "use strict";
+let numberInput = document.getElementById("mobileNumber");
 continueButtonClicked();
 
 function continueButtonClicked(){
