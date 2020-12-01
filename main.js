@@ -2,7 +2,8 @@
 let modal = document.querySelector(".navMobileModal");
 let timeOutWelcomeModal = document.querySelector(".welcomeModal");
 let modalContent = document.querySelector(".navMobileModal .menuContent");
-
+let timeOutnumberInput = document.getElementById("mobileNumber");
+let timeOutwarningTxt = document.querySelector(".warningMessage");
 
 mobileModalClose();
 mobileModalOpen();
@@ -13,8 +14,7 @@ closeTimeoutWelcomeBanner();
 continueButtonClicked();
 
 function continueButtonClicked(){
-    let numberInput = document.getElementById("mobileNumber");
-    let warningTxt = document.querySelector(".warningMessage");
+  
     // let continueButton = document.querySelector(".welcomeModalInputs input[type=\"button\"");
     let continueButton = document.querySelector("#continueLogin");
     continueButton.addEventListener("click", function(e){
@@ -24,14 +24,14 @@ function continueButtonClicked(){
 
 function mobileNumberValidation(){
         let valueString = "";
-            valueString = numberInput.value;
+            valueString = timeOutnumberInput.value;
         let numberPattern = /^([0-9]){10}$/;
         if(!valueString.match(numberPattern)){
-            numberInput.style.borderColor = "red";
-            warningTxt.classList.add("active");
+            timeOutnumberInput.style.borderColor = "red";
+            timeOutwarningTxt.classList.add("active");
         }else{
-            numberInput.style.borderColor = "gray";
-            warningTxt.classList.remove("active");
+            timeOutnumberInput.style.borderColor = "gray";
+            timeOutwarningTxt.classList.remove("active");
         }
 }
 
