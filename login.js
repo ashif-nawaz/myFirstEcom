@@ -11,8 +11,8 @@ function continueButtonClicked(){
 }
 
 function mobileNumberValidation(){
-       let numberInput = document.querySelector("#mobileNumber");
-           numberInput.style.backgroundColor = "red";
+       let numberInput = document.getElementById("mobileNumber");
+            numberInput.style.background = "red";
         // let warningTxt = document.querySelector(".warningMessage");
         let warningTxt = numberInput.parentNode.querySelector(".warningMessage");
         let valueString = "";
