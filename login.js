@@ -11,13 +11,12 @@ function continueButtonClicked(){
 }
 
 function mobileNumberValidation(){
-    let numberInput = document.querySelector(".welcomeModalInputs input[type=\"number\"");
+    let numberInput = document.querySelector("#mobileNumber");
 
         let warningTxt = document.querySelector(".warningMessage");
         let valueString = "";
             valueString = numberInput.value;
         let numberPattern = /^([0-9]){10}$/;
-        alert(numberInput + ", " + warningTxt);
         if(!valueString.match(numberPattern)){
             numberInput.style.borderColor = "red";
             warningTxt.classList.add("active");
