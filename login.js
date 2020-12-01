@@ -6,14 +6,8 @@ function continueButtonClicked(){
     let continueButton = document.querySelector("#continueLogin");
     continueButton.addEventListener("click", function(e){
          e.preventDefault();
-        //  mobileNumberValidation();
-        alert("Hello");
+         mobileNumberValidation();
     });
-
-    // continueButton.addEventListener("touch" ,function(e){
-    //      e.preventDefault();
-    //      mobileNumberValidation();
-    // });
 }
 
 function mobileNumberValidation(){
@@ -23,6 +17,8 @@ function mobileNumberValidation(){
         let valueString = "";
             valueString = numberInput.value;
         let numberPattern = /^([0-9]){10}$/;
+        console.log(numberInput);
+        console.log(warningTxt);
         if(!valueString.match(numberPattern)){
             numberInput.style.borderColor = "red";
             warningTxt.classList.add("active");
