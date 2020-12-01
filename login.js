@@ -7,7 +7,7 @@ function continueButtonClicked(){
     continueButton.addEventListener("click", function(e){
          e.preventDefault();
          let numberInput = document.getElementById("mobileNumber");
-             alert(numberInput.value);
+             alert(numberInput);
     });
 }
 
