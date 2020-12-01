@@ -3,33 +3,36 @@ let modal = document.querySelector(".navMobileModal");
 let timeOutWelcomeModal = document.querySelector(".welcomeModal");
 let modalContent = document.querySelector(".navMobileModal .menuContent");
 
-
-
 mobileModalClose();
 mobileModalOpen();
 clickOpenCaret();
 openTimeoutWelcomeBanner();
 closeTimeoutWelcomeBanner();
-mobileNumberValidation();
+
+continueButtonClicked();
+
+function continueButtonClicked(){
+    // let continueButton = document.querySelector(".welcomeModalInputs input[type=\"button\"");
+    let continueButton = document.querySelector("#continueLogin");
+    continueButton.addEventListener("click", function(e){
+         mobileNumberValidation();
+    });
+}
 
 function mobileNumberValidation(){
     let numberInput = document.querySelector(".welcomeModalInputs input[type=\"number\"");
 
-    numberInput.addEventListener("blur", function(e){
         let warningTxt = document.querySelector(".warningMessage");
         let valueString = "";
             valueString = numberInput.value;
         let numberPattern = /^([0-9]){10}$/;
         if(!valueString.match(numberPattern)){
-            this.style.borderColor = "red";
+            numberInput.style.borderColor = "red";
             warningTxt.classList.add("active");
         }else{
-            this.style.borderColor = "gray";
+            numberInput.style.borderColor = "gray";
             warningTxt.classList.remove("active");
         }
-    });
-    
-
 }
 
 
