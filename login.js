@@ -1,5 +1,6 @@
 "use strict";
-let numberInput = document.getElementById("mobileNumber");
+// let numberInput = document.getElementById("mobileNumber");
+let numberInput = document.getElementById("mob");
 let warningTxt = document.querySelector(".warningMessage");
 continueButtonClicked();
 
@@ -8,8 +9,8 @@ function continueButtonClicked(){
     let continueButton = document.querySelector("#continueLogin");
     continueButton.addEventListener("click", function(e){
          e.preventDefault();
-         let numberInput = document.getElementById("mobileNumber");
-             alert(warningTxt);
+        //  let numberInput = document.getElementById("mobileNumber");
+             alert(numberInput);
              warningTxt.classList.add("active");
     });
 }
