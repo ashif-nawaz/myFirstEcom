@@ -1,6 +1,6 @@
 "use strict";
 // let numberInput = document.getElementById("mobileNumber");
-let numberInput = document.getElementById("mob");
+let numberInput = document.getElementById("mobileNumber");
 let warningTxt = document.querySelector(".warningMessage");
 continueButtonClicked();
 
