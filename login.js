@@ -17,8 +17,7 @@ function mobileNumberValidation(){
         let valueString = "";
             valueString = numberInput.value;
         let numberPattern = /^([0-9]){10}$/;
-        console.log(numberInput);
-        console.log(warningTxt);
+        alert(numberInput + ", " + warningTxt);
         if(!valueString.match(numberPattern)){
             numberInput.style.borderColor = "red";
             warningTxt.classList.add("active");
