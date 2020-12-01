@@ -6,16 +6,13 @@ function continueButtonClicked(){
     let continueButton = document.querySelector("#continueLogin");
     continueButton.addEventListener("click", function(e){
          e.preventDefault();
-         this.style.backgroundColor = "green";
          mobileNumberValidation();
-         this.style.color = "yellow";
     });
 }
 
 function mobileNumberValidation(){
-     alert("hi");
-    let numberInput = document.querySelector("#mobileNumber");
-
+       let numberInput = document.querySelector("#mobileNumber");
+           numberInput.style.backgroundColor = "red";
         // let warningTxt = document.querySelector(".warningMessage");
         let warningTxt = numberInput.parentNode.querySelector(".warningMessage");
         let valueString = "";
