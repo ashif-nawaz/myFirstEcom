@@ -2,6 +2,8 @@
 let modal = document.querySelector(".navMobileModal");
 let timeOutWelcomeModal = document.querySelector(".welcomeModal");
 let modalContent = document.querySelector(".navMobileModal .menuContent");
+let numberInput = document.getElementById("mobileNumber");
+let warningTxt = document.querySelector(".warningMessage");
 
 mobileModalClose();
 mobileModalOpen();
@@ -20,9 +22,6 @@ function continueButtonClicked(){
 }
 
 function mobileNumberValidation(){
-    let numberInput = document.querySelector(".welcomeModalInputs input[type=\"number\"");
-
-        let warningTxt = document.querySelector(".warningMessage");
         let valueString = "";
             valueString = numberInput.value;
         let numberPattern = /^([0-9]){10}$/;
