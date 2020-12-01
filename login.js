@@ -5,8 +5,14 @@ function continueButtonClicked(){
     // let continueButton = document.querySelector(".loginPageInputs input[type=\"button\"");
     let continueButton = document.querySelector("#continueLogin");
     continueButton.addEventListener("click", function(e){
+        e.preventDefault();
          mobileNumberValidation();
     });
+
+    continueButton.addEventListener("touch" ,function(e){
+         e.preventDefault();
+         mobileNumberValidation();
+    })
 }
 
 function mobileNumberValidation(){
