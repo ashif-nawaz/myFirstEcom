@@ -4,6 +4,9 @@ let timeOutWelcomeModal = document.querySelector(".welcomeModal");
 let modalContent = document.querySelector(".navMobileModal .menuContent");
 let timeOutnumberInput = document.getElementById("mobileNumber");
 let timeOutwarningTxt = document.querySelector(".warningMessage");
+let mainPageSearch = document.querySelector(".indexSearchIcon");
+let searchModal = document.querySelector(".searchModal");
+let searchBackArrow = document.querySelector(".backArrow");
 
 
 mobileModalClose();
@@ -11,8 +14,21 @@ mobileModalOpen();
 clickOpenCaret();
 openTimeoutWelcomeBanner();
 closeTimeoutWelcomeBanner();
-
 continueButtonClicked();
+searchIconClicked();
+searchBoxBackClicked();
+
+function searchBoxBackClicked(){
+    searchBackArrow.addEventListener("click", function(e){
+          searchModal.classList.remove("active");
+    });
+  
+}
+function searchIconClicked(){
+    mainPageSearch.addEventListener("click", function(e){
+            searchModal.classList.add("active");
+    });
+}
 
 function continueButtonClicked(){
     let continueButton = document.querySelector("#continueLogin");
