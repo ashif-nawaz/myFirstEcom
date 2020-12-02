@@ -1088,6 +1088,7 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 0.4rem;
+    margin-top: 0.2rem;
     background-color: white;
     /* background-color: red; */
 }
