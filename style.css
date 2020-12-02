@@ -1057,7 +1057,7 @@ header{
     position: sticky;
     top: 0;
     width: 100%;
-    padding:0.6rem;
+    padding:0.7rem;
     box-shadow: 0 1px 5px lightgray;
     z-index: 99;
 }
