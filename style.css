@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root{
     --main-color: white;
     --font-color: rgba(66, 66, 66, 0.911);
@@ -15,8 +16,8 @@
 }
 html{
 
-    /* font-family: 'Roboto', sans-serif; */
-    font-family: 'Roboto', monospace;
+    font-family: 'Roboto', sans-serif, monospace;
+    /* font-family: 'Roboto', monospace; */
     font-size: min(max(1rem, 5vw), 20px);
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
