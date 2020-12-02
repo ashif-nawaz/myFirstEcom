@@ -1055,26 +1055,29 @@ header{
 /* empty cart container styling */
 .navBar{
     position: relative;
-    padding: 0.6rem;
+    padding: 0.7rem;
     width: 100%;
     box-shadow: 0 1px 5px lightgray;
 }
 
-.navBar::before{
+.navBar .backArrow{
     position: absolute;
-    left: 1rem;
     top: 50%;
-    font-size: 1rem;
     transform: translateY(-50%);
-    content: "\1F860";
+    width: fit-content;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(97, 97, 97);
+    white-space: nowrap;
 }
 
-.navBar>span{
-    margin-left: 2.1rem;
+.navBar span:last-of-type{
+    margin-left: 1.4rem;
     width: fit-content;
     text-transform: uppercase;
     font-size: 0.8rem;
-    font-weight: 500;
+    font-weight: 600;
     color: rgb(97, 97, 97);
     white-space: nowrap;
 }
