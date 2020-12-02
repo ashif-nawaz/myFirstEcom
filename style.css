@@ -26,10 +26,9 @@ html{
 
 }
 
-/* body{
-    width: 100%;
-    height: 100%
-}  */
+.noscroll{
+    overflow: hidden;
+}
 
 div::-webkit-scrollbar{
        display: none;
@@ -1152,6 +1151,7 @@ header{
     width: 100%;
     height: 100%;
     background-color: white;
+    -webkit-overflow-scrolling: touch;
     overflow-y: auto;
     overflow-x: hidden;
     scroll-behavior: smooth;

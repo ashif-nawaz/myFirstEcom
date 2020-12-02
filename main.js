@@ -21,15 +21,16 @@ searchBoxBackClicked();
 function searchBoxBackClicked(){
     searchBackArrow.addEventListener("click", function(e){
           searchModal.classList.remove("active");
-          body.style.overflow = "auto";
+          body.classList.remove("noscroll");
           
     });
   
 }
+
 function searchIconClicked(){
     mainPageSearch.addEventListener("click", function(e){
             searchModal.classList.add("active");
-            body.style.overflow = "hidden";
+            body.classList.add("noscroll");
             
     });
 }
