@@ -1054,32 +1054,35 @@ header{
 
 /* empty cart container styling */
 .navBar{
-    position: relative;
-    padding: 0.7rem;
+    height: 40px;
     width: 100%;
+    padding: 0.5rem;
     box-shadow: 0 1px 5px lightgray;
 }
 
+.navBar span{
+ 
+}
+
 .navBar .backArrow{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: fit-content;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: rgb(97, 97, 97);
-    white-space: nowrap;
+   position: relative;
+   
+
+}
+
+.navBar .backArrow i{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   color: rgb(97, 97, 97);
+   padding: 0.2rem 0.2rem; 
 }
 
 .navBar span:last-of-type{
-    margin-left: 1.4rem;
-    width: fit-content;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: rgb(97, 97, 97);
-    white-space: nowrap;
+   margin-left: 1.8rem;
+   text-transform: uppercase;
+   font-weight: 600;
+   color: rgb(97, 97, 97);
 }
 
 .emptyCartContainer{
