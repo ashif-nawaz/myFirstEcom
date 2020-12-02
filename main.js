@@ -7,7 +7,7 @@ let timeOutwarningTxt = document.querySelector(".warningMessage");
 let mainPageSearch = document.querySelector(".indexSearchIcon");
 let searchModal = document.querySelector(".searchModal");
 let searchBackArrow = document.querySelector(".backArrow");
-
+let body = document.body;
 
 mobileModalClose();
 mobileModalOpen();
@@ -21,14 +21,16 @@ searchBoxBackClicked();
 function searchBoxBackClicked(){
     searchBackArrow.addEventListener("click", function(e){
           searchModal.classList.remove("active");
-          document.body.style.overflow = "";
+          body.style.overflow = "auto";
+          
     });
   
 }
 function searchIconClicked(){
     mainPageSearch.addEventListener("click", function(e){
             searchModal.classList.add("active");
-            document.body.style.overflow = "hidden";
+            body.style.overflow = "hidden";
+            
     });
 }
 
