@@ -1054,12 +1054,12 @@ header{
 
 /* empty cart container styling */
 .navBar{
-    /* height: 55px; */
     position: sticky;
     top: 0;
     width: 100%;
     padding:0.6rem;
     box-shadow: 0 1px 5px lightgray;
+    z-index: 99;
 }
 
 .navBar .backArrow{
@@ -1121,8 +1121,9 @@ header{
     text-transform: uppercase;
     margin: auto;
     display: block;
-    padding: 0.4rem 0.5rem;
+    padding: 0.5rem 0.5rem;
     color: rgb(252, 26, 120);
+    font-size: 1.1rem;
     background-color: transparent;
     border: 1px solid rgb(252, 26, 120);
     border-radius: 3px;
