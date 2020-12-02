@@ -1061,6 +1061,7 @@ header{
     padding:0.7rem;
     box-shadow: 0 1px 5px lightgray;
     z-index: 99;
+    background-color: white;
 }
 
 .navBar .backArrow{
@@ -1081,6 +1082,13 @@ header{
    font-size: 0.85rem;
    font-weight: 600;
    color: rgb(97, 97, 97);
+}
+
+.dammyContainer{
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    /* background-color: red; */
 }
 
 .emptyCartContainer{
