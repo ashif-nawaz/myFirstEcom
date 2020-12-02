@@ -1055,6 +1055,8 @@ header{
 /* empty cart container styling */
 .navBar{
     /* height: 55px; */
+    position: sticky;
+    top: 0;
     width: 100%;
     padding:0.6rem;
     box-shadow: 0 1px 5px lightgray;
@@ -1075,7 +1077,7 @@ header{
 .navBar span:last-of-type{
    margin-left: 2rem;
    text-transform: uppercase;
-   font-size: 0.8rem;
+   font-size: 0.85rem;
    font-weight: 600;
    color: rgb(97, 97, 97);
 }
