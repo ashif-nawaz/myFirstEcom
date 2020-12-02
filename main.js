@@ -21,12 +21,14 @@ searchBoxBackClicked();
 function searchBoxBackClicked(){
     searchBackArrow.addEventListener("click", function(e){
           searchModal.classList.remove("active");
+          document.body.style.overflow = "";
     });
   
 }
 function searchIconClicked(){
     mainPageSearch.addEventListener("click", function(e){
             searchModal.classList.add("active");
+            document.body.style.overflow = "hidden";
     });
 }
 
