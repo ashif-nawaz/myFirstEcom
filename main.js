@@ -7,16 +7,25 @@ let timeOutwarningTxt = document.querySelector(".warningMessage");
 let mainPageSearch = document.querySelector(".indexSearchIcon");
 let searchModal = document.querySelector(".searchModal");
 let searchBackArrow = document.querySelector(".backArrow");
+let mainPageBookmark = document.querySelector(".indexBookmarkIcon");
 let body = document.body;
 
 mobileModalClose();
 mobileModalOpen();
 clickOpenCaret();
-openTimeoutWelcomeBanner();
+// openTimeoutWelcomeBanner();
 closeTimeoutWelcomeBanner();
 continueButtonClicked();
 searchIconClicked();
 searchBoxBackClicked();
+wishListIconClicked();
+window.addEventListener("load", openTimeoutWelcomeBanner);
+
+function wishListIconClicked(){
+     mainPageBookmark.addEventListener("click", function(e){
+        timeOutWelcomeModal.classList.add("active");
+     });
+}
 
 function searchBoxBackClicked(){
     searchBackArrow.addEventListener("click", function(e){
@@ -71,9 +80,14 @@ function closeTimeoutWelcomeBanner(){
 }
 
 function openTimeoutWelcomeBanner(){
-     setTimeout(() => {
-            timeOutWelcomeModal.classList.add("active");
-     }, 10000);
+     let loginPopStateStorage = window.sessionStorage;
+         let shown = loginPopStateStorage.getItem("shown");
+         if(shown === null || shown === "No" || shown === ""){
+            setTimeout(() => {
+                    timeOutWelcomeModal.classList.add("active");
+            }, 10000);
+            loginPopStateStorage.setItem("shown", "Yes");
+        }
 }
 
 function clickOpenCaret(){
